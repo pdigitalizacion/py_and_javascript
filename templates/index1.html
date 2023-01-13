@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test_alert</title>
+
+
+</head>
+<!--<script type="text/js">-->
+<!--var $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};-->
+<!--</script>-->
+<!--<script type="text/js">-->
+<!--var intervalID = setInterval(update_values,1000);-->
+
+<!--&lt;!&ndash;Definition of JS variables&ndash;&gt;-->
+<!--  function update_values() {-->
+<!--        $.getJSON($SCRIPT_ROOT + '/refresh-tool',-->
+
+<!--      function(data) {-->
+<!--        $('#popup').text(data.popup);-->
+<!--        console.log(data);-->
+<!--      });-->
+<!--    };-->
+
+
+
+<!--    function stopTextColor() {-->
+<!--      clearInterval(intervalID);-->
+<!--    }-->
+<!--    </script>-->
+<body>
+<div id="popup">
+    tttt
+</div>
+
+
+{
+"cadena": "Bre",
+"num": "35",
+"arreglo": ["hablar", "programar", "escribir"],
+"objeto": {
+"twitter":"ejemplo@gmail.com",
+"emails":"ex@gmail.com"
+},
+"nulo": null
+}
+<script type="text/js" src="{{ url_for('static' , filename = 'js.js')}}"></script>
+</body>
+</html>
